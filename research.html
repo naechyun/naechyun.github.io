@@ -49,26 +49,41 @@
 									<p>
 										Alignment is the first step for many genomics applications. 
 										Currently, people rely on a linear haploid reference genome such as GRCh38 for this task. 
-										However, more than half of the "standard" reference genome is from one individual, resulting in confounding of downstream results. 
-										A solution is replacing the linear reference with a graph data structure that contains genotypes collected from many individuals, aka graph genome. 
-										Our study, FORGe, presents a ranking strategy for the inclusion of population data. 
-										As an extension of FORGe, I develop "reference flow" that uses a small number of additional references built using population data to improve alignment results. 
+										However, more than half of the "standard" reference genome is sequenced from one individual. 
+										This results in "reference bias" that confounds downstream analyses. </br>
+
+										A solution is to use a reference genome containing population information. 
+										Our study, FORGe, presents a ranking strategy for the inclusion of population data in a comprehensive graph genome. 
+										Further, I develop "reference flow" to use a small number of additional population-aware linear references to improve alignment. 
 									</br>
 									<ul>
-										<li>Publications: Chen <i>et al.</i> (2020, preprint), Pritt <i>et al.</i> (2018)</li>
-										<li>Presentation: RECOMB-Seq (Washington DC, USA, 2019), Genome Informatics (CSHL, USA, 2019)</li>
+										<li>Publications: <a href="https://www.biorxiv.org/content/10.1101/2020.03.03.975219v1">Chen <i>et al.</i> (2020, preprint)</a>, 
+											<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1595-x">Pritt <i>et al.</i> (2018)</a></li>
+										<li>Presentation: <a href="files/2019-Chen-Recomb_seq.pdf">RECOMB-Seq (Washington DC, USA, 2019)</a>, 
+											<a href="files/2019-Chen-GenomeInformatics.pdf">Genome Informatics (CSHL, USA, 2019)</a></li>
 										<li>Software: 
 										<a href="https://github.com/langmead-lab/reference_flow">reference flow</a>, 
-										<a href="https://github.com/alshai/liftover">liftover</a>, 
+										<a href="https://github.com/alshai/leviosam">levioSAM</a>, 
 										<a href="https://github.com/langmead-lab/FORGe">FORGe</a>, 
 										<a href="https://github.com/BenLangmead/bowtie-majref">bowtie-majref</a></li>
+									</ul>
+									</p>
+									<h3>Accurate variant calling utilizing population data and deep learning</h3>
+									<p>
+										Variant calling is a genomic data processing method to identify differences between a sample and the reference, which is usually done using sophisticated processing and statistical methods. 
+										<a href="https://github.com/google/deepvariant">DeepVariant</a> is a deep-learning-based variant caller developed by Google Health. 
+										While interning on the DeepVariant team, I developed a population-aware DeepVariant model to incorporate population information in variant calling.
+										This model is more accurate than the default DeepVariant model.
+									</br>
+									<ul>
+										<li>Presentation: Biological Data Science (virtual, 2020)</li>
 									</ul>
 									</p>
 									<h3>Developing computational methods for biological and medical data</h3>
 									<p>
 										Many research areas have been adopting modern sequencing techonology for faster and more accurate analysis. 
 										I collaborate with researchers at Johns Hopkins University to predict chromatin accessibility using machine learning methods. 
-										Also, I work with collaborators at National Taiwan Univeristy to study immunogenomics such as the human leukocyte antigen (HLA) complex.
+										Also, I work with collaborators at National Taiwan Univeristy to study immunogenomics such as the human leukocyte antigen (HLA) complex and the Adaptive Immune Receptor Repertoire (AIRR).
 									</br>
 									<ul>
 										<li>Presentation: JHU Chromatin Workshop (2019)</li>
@@ -82,7 +97,9 @@
 										My research includes short read and long read alignment, multiple sequence alignment, and assembly.
 									</br>
 									<ul>
-										<li>Publications: Liao <i>et al.</i> (2018), Chen <i>et al.</i> (2018), Lin <i>et al.</i> (2018), Chang <i>et al.</i> (2016), Liu <i>et al.</i> (2016), Chen <i>et al.</i> (2015)</li>
+										<li>Selected publications: <a href="https://ieeexplore.ieee.org/abstract/document/8445105">Liao <i>et al.</i> (2018)</a>, 
+											<a href="files/2018-ISCAS.pdf">Chen <i>et al.</i> (2018)</a>, 
+											<a href="https://ieeexplore.ieee.org/abstract/document/7348380">Chen <i>et al.</i> (2015)</a></li>
 									<!-- </br> -->
 										<li>Presentations: APCCAS (Jeju, Korea, 2016), BioCAS (Atlanta, USA, 2015)</li>
 									</ul>
