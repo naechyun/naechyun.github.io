@@ -56,24 +56,29 @@
 									</header>
 									<h3>Improving sequence alignment and reducing reference bias</h3>
 									<p>
-										Alignment is the first step for many genomics applications. 
-										Currently, people rely on a linear haploid reference genome such as GRCh38 for this task. 
-										However, more than half of the "standard" reference genome is sequenced from one individual. 
-										This results in "reference bias" that confounds downstream analyses. </br>
-
-										A solution is to use a reference genome containing population information. 
-										Our study, FORGe, presents a ranking strategy for the inclusion of population data in a comprehensive graph genome. 
-										We also devlope levioSAM to perform fast lift-over of alignments that are based on a variant-aware reference.
-										Further, the reference flow framework uses a small number of additional population-aware linear references to improve alignment. 
-									</br>
+										Many genomic analyses start from aligning sequenced reads to a reference genome, such as GRCh38. Despite the great 
+										popularity and efficiency of this approach, these analyses can suffer from "reference bias" due to 
+										(a) assembly artifacts (b) the lack of diversity.</br>
+										</br>
+										While new, complete references like T2T-CHM13 resolve many assembly artifacts, it's challenging to migrate all 
+										genomic analyses to it because of the lack of genomic annotations. We developed the "levioSAM2" approach to utilizing 
+										the improved quality of T2T-CHM13 while generating results compatible with old reference coordinates.</br>
+										</br>
+										To deal with the lack of genetic diversity in a linear haploid reference, we designed the "reference flow" method 
+										to efficiently align reads to multiple population references. We also studied the prioritization of variants to 
+										include in a graph aligner ("FORGe") and developed fast software to lift over alignments ("levioSAM").</br>
 									<ul>
 										<li>Publications: 
+											<a href="https://www.biorxiv.org/content/10.1101/2022.04.27.489683">Chen <i>et al.</i> (2022, preprint)</a>, 
 											<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02229-3">Chen <i>et al.</i> (2021)</a>, 
 											<a href="https://doi.org/10.1093/bioinformatics/btab396">Mun<sup>*</sup>, Chen<sup>*</sup>, Langmead (2021)</a>, 
 											<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1595-x">Pritt, Chen, Langmead (2018)</a></li>
-										<li>Presentation: <a href="files/2019-Chen-Recomb_seq.pdf">RECOMB-Seq (Washington DC, USA, 2019; poster)</a>, 
-											<a href="files/2019-Chen-GenomeInformatics.pdf">Genome Informatics (CSHL, USA, 2019; poster)</a></li>
+										<li>Presentation: 
+											RECOMB (La Jolla, USA, 2022; poster),
+											<a href="files/2019-Chen-GenomeInformatics.pdf">Genome Informatics (CSHL, USA, 2019; poster)</a>,
+											<a href="files/2019-Chen-Recomb_seq.pdf">RECOMB-Seq (Washington DC, USA, 2019; poster)</a></li>
 										<li>Software: 
+										<a href="https://github.com/milkschen/leviosam2">levioSAM2</a>, 
 										<a href="https://github.com/langmead-lab/reference_flow">reference flow</a>, 
 										<a href="https://github.com/alshai/leviosam">levioSAM</a>, 
 										<a href="https://github.com/langmead-lab/FORGe">FORGe</a>, 
@@ -82,10 +87,11 @@
 									</p>
 									<h3>Accurate variant calling utilizing population data and deep learning</h3>
 									<p>
-										Variant calling is a genomic data processing method to identify differences between a sample and the reference, which is usually done using sophisticated processing and statistical methods. 
+										Variant calling is a genomic data processing method to identify differences between a sample and the reference, 
+										which is usually done using sophisticated processing and statistical methods. 
 										<a href="https://github.com/google/deepvariant">DeepVariant</a> is a deep-learning-based variant caller developed by Google Health. 
-										While interning on the DeepVariant team, I developed a population-aware DeepVariant model to incorporate population information in variant calling.
-										This model is more accurate than the default DeepVariant model.
+										While interning on the DeepVariant team, I led the development of a population-aware DeepVariant model to incorporate population 
+										information in variant calling. This model is more accurate than the default DeepVariant model.
 									</br>
 									<ul>
 										<li>Publications: <a href="https://doi.org/10.1101/2021.01.06.425550">Chen <i>et al.</i> (2021, preprint)</a>
@@ -96,9 +102,10 @@
 									</p>
 									<h3>Developing computational methods for biological and medical data</h3>
 									<p>
-										Many research areas have been adopting modern sequencing techonology for faster and more accurate analysis. 
+										Many research areas have been adopting modern sequencing technology for faster and more accurate analysis. 
 										I collaborate with researchers at Johns Hopkins University to predict chromatin accessibility using machine learning methods. 
-										Also, I work with collaborators at National Taiwan Univeristy to study immunogenomics such as the human leukocyte antigen (HLA) complex and the Adaptive Immune Receptor Repertoire (AIRR).
+										Also, I work with collaborators at National Taiwan University to study immunogenomics such as the human leukocyte antigen (HLA) 
+										complex and the Adaptive Immune Receptor Repertoire (AIRR).
 									</br>
 									<ul>
 										<li>Publications: <a href=https://doi.org/10.1101/2020.11.27.399857">Lin <i>et al.</i> (2021, preprint)</a></li>
@@ -109,8 +116,8 @@
 									<p>
 										With the enormous volume of genomics data, how to process it efficiently has become a challenging topic. 
 										One solution is using specialized hardware architecture based on FPGA or ASIC to make computing efficient. 
-										I design specialized algorithms to meet hardware requirements (which are usually more limited than that of software) and develop architectures for efficient computing. 
-										My research includes short read and long read alignment, multiple sequence alignment, and assembly.
+										I design specialized algorithms to meet hardware requirements (usually more limited than software) and develop architectures for efficient computing. 
+										My research includes short-read and long-read alignment, multiple sequence alignment, and assembly.
 									</br>
 									<ul>
 										<li>Selected publications: <a href="https://ieeexplore.ieee.org/abstract/document/8445105">Liao <i>et al.</i> (2018)</a>, 
