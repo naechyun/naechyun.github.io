@@ -1,146 +1,141 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SCYVN71ZQ5"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SCYVN71ZQ5"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-SCYVN71ZQ5');
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nae-Chyun Chen</title>
+	<meta name="description" content="Nae-Chyun Chen works on computational genomics for personalized cancer vaccines.">
+	<style>
+		:root {
+			--bg: #ffffff;
+			--text: #1f1f1f;
+			--muted: #6b6b6b;
+			--link: #1a5fb4;
+			--rule: #e4e4e4;
+		}
+		@media (prefers-color-scheme: dark) {
+			:root {
+				--bg: #161616;
+				--text: #e6e6e6;
+				--muted: #9a9a9a;
+				--link: #8ab4f8;
+				--rule: #2e2e2e;
+			}
+		}
+		body {
+			margin: 0;
+			background: var(--bg);
+			color: var(--text);
+			font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+		}
+		main {
+			max-width: 640px;
+			margin: 0 auto;
+			padding: 64px 20px;
+		}
+		h1 { font-size: 28px; margin: 0 0 4px; }
+		h2 {
+			font-size: 13px;
+			font-weight: 600;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			color: var(--muted);
+			margin: 40px 0 12px;
+			padding-top: 24px;
+			border-top: 1px solid var(--rule);
+		}
+		p { margin: 0 0 12px; }
+		ul { margin: 0; padding-left: 0; list-style: none; }
+		li { margin-bottom: 12px; }
+		a { color: var(--link); text-decoration: none; }
+		a:hover { text-decoration: underline; }
+		.muted { color: var(--muted); }
+		.links a { margin-right: 16px; }
+	</style>
+</head>
+<body>
+<main>
+	<h1>Nae-Chyun Chen 陳乃群</h1>
+	<p class="links">
+		<a href="https://github.com/milkschen">GitHub</a>
+		<a href="https://scholar.google.com/citations?user=JymhwIwAAAAJ&hl=en">Google Scholar</a>
+		<a href="https://www.linkedin.com/in/ncchen/">LinkedIn</a>
+	</p>
 
-		gtag('config', 'G-SCYVN71ZQ5');
-		</script>
-		<title>Nae-Chyun Chen</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+	<h2>Now</h2>
+	<p>I work on personalized cancer vaccines. We use liquid biopsy to improve how the vaccines are designed.</p>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<h2>Before</h2>
+	<ul>
+		<li>
+			<b>Exai Bio</b> <span class="muted">· 2022–2026</span><br>
+			Software Engineer to Head of Computational Platform.
+			Led engineering and worked hands-on in bioinformatics and machine learning
+			for a cell-free RNA platform for early cancer detection.
+		</li>
+		<li>
+			<b>PhD in Computer Science, Johns Hopkins University</b> <span class="muted">· 2018–2022</span><br>
+			With <a href="https://langmead-lab.org/">Ben Langmead</a>.
+			Reduced reference bias in read alignment with population references and lift-over
+			(levioSAM2, reference flow). Contributed to the first complete human genome (T2T).
+		</li>
+		<li>
+			<b>Google Health, DeepVariant team</b> <span class="muted">· 2020</span><br>
+			Research intern. Led a population-aware DeepVariant model that calls variants more accurately than the default model.
+		</li>
+		<li>
+			<b>National Taiwan University</b> <span class="muted">· 2010–2017</span><br>
+			MS in Electronics Engineering: hardware accelerators for sequence alignment.
+			BS in Electrical Engineering and BA in Economics.
+		</li>
+	</ul>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Nae-Chyun</strong> <span></span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+	<h2>Selected papers</h2>
+	<ul>
+		<li>
+			<a href="https://www.nature.com/articles/s41592-023-02069-6">Improved sequence mapping using a complete reference genome and lift-over.</a><br>
+			<span class="muted"><b>Chen</b> et al. <i>Nature Methods</i> (2024)</span>
+		</li>
+		<li>
+			<a href="https://link.springer.com/article/10.1186/s12859-023-05294-0">Improving variant calling using population data and deep learning.</a><br>
+			<span class="muted"><b>Chen</b> et al. <i>BMC Bioinformatics</i> (2023)</span>
+		</li>
+		<li>
+			<a href="https://www.science.org/doi/10.1126/science.abj6987">The complete sequence of a human genome.</a><br>
+			<span class="muted">Nurk et al. <i>Science</i> (2022)</span>
+		</li>
+		<li>
+			<a href="https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2022.922513/full">Profiling germline adaptive immune receptor repertoire with gAIRR Suite.</a><br>
+			<span class="muted">Lin*, Lin*, <b>Chen</b>* et al. <i>Frontiers in Immunology</i> (2022)</span>
+		</li>
+		<li>
+			<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02229-3">Reference flow: reducing reference bias using multiple population genomes.</a><br>
+			<span class="muted"><b>Chen</b> et al. <i>Genome Biology</i> (2021)</span>
+		</li>
+		<li>
+			<a href="https://doi.org/10.1093/bioinformatics/btab396">LevioSAM: fast lift-over of variant-aware reference alignments.</a><br>
+			<span class="muted">Mun*, <b>Chen</b>*, Langmead. <i>Bioinformatics</i> (2021)</span>
+		</li>
+	</ul>
+	<p class="muted">* equal contribution. Full list on <a href="https://scholar.google.com/citations?user=JymhwIwAAAAJ&hl=en">Google Scholar</a>.</p>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="aboutme.html">About Me</a></li>
-							<li><a href="research.html">Research</a></li>
-							<!-- <li><a href="publication.html">Publications</a></li>
-							<li><a href="life.html">Life</a></li> -->
-						</ul>
-					</nav>
+	<h2>Software</h2>
+	<ul>
+		<li><a href="https://github.com/milkschen/leviosam2">levioSAM2</a> <span class="muted">· lift-over of read alignments between references</span></li>
+		<li><a href="https://github.com/langmead-lab/reference_flow">reference flow</a> <span class="muted">· alignment to multiple population references</span></li>
+		<li><a href="https://github.com/google/deepvariant">DeepVariant</a> <span class="muted">· contributor, population-aware model</span></li>
+	</ul>
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>Nae-Chyun Chen 陳乃群</h1>
-							</header>
-							<div class="content">
-								<p><font size="3">
-									<!-- PhD candidate at JHU CS.<br /> -->
-								I develop computational genomics methods.<br />
-								He/Him/His. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
-							</div>
-						</div>
-					</section>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/lake_louise.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h2><a href="aboutme.html" class="link">About Me</a></h2>
-										<p><font size="3">Experience | Education | Research</font></p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/jhu.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h2><a href="research.html" class="link">Research</a></h2>
-									</header>
-								</article>
-								<!-- <article>
-									<span class="image">
-										<img src="images/ntu.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h2><a href="publication.html" class="link">Publications</a></h2>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/jangjun.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h2><a href="life.html" class="link">Travel | Sports | Photography</a></h2>
-									</header>
-								</article> -->
-							</section>
-
-						<!-- Two -->
-							<!-- <section id="two">
-								<div class="inner">
-									<header class="major">
-										<h2>Massa libero</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="landing.html" class="button next">Get Started</a></li>
-									</ul>
-								</div>
-							</section> -->
-
-					</div>
-
-				<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<ul class="icons">
-							<li><a href="http://twitter.com/naechyun_chen" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="http://github.com/milkschen" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/ncchen/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://scholar.google.com/citations?hl=en&user=JymhwIwAAAAJ&view_op=list_works&sortby=pubdate" class="icon brands alt fa-google"><span class="label">Google Scholar</span></a></li>
-							<li><span class="icon solid alt fa-envelope"></span> naechyun.chen< at >gmail.com</li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+	<h2>Podcast</h2>
+	<p>I co-host <a href="https://podcasts.apple.com/us/podcast/btba-presents-生技來一刻/id1531820937">生技來一刻</a>, a Mandarin podcast where we talk with people in biotech about their careers and the science. 100k+ downloads.</p>
+</main>
+</body>
 </html>
